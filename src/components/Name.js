@@ -3,7 +3,10 @@ import Typed from "react-typed";
 const Name = () => {
   return (
     <div className="Name">
-      <div style={{ fontSize: 20 }}>
+      <div
+        style={{ fontSize: 28, backgroundColor: "black", color: "cyan" }}
+        className="container mt-3 p-5"
+      >
         <Typed
           strings={[
             "Hello.",
