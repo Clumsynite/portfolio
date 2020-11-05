@@ -1,9 +1,21 @@
-import Typed from 'react-typed'
+import Typed from "react-typed";
 
 const Name = () => {
   return (
-    <div>
-      <h1>Name</h1>
+    <div className="Name">
+      <div style={{ fontSize: 20 }}>
+        <Typed
+          strings={[
+            "Hello.",
+            "I am Rishabh Pathak.",
+            "I am also known as Clumsyknight.",
+            "View my projects below.",
+          ]}
+          typeSpeed={40}
+          smartBackspace={true}
+          backSpeed={50}
+        />
+      </div>
     </div>
   );
 };
