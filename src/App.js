@@ -1,9 +1,11 @@
+import Name from "./components/Name";
+
 const App = () => {
   return (
     <div className="App">
-      <h1>App</h1>
+      <Name />
     </div>
   );
-}
+};
 
 export default App;
