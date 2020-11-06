@@ -1,0 +1,17 @@
+.link {
+  color: cyan;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #00ffbf;
+}
+
+.link-white {
+  color: white;
+}
+
+.link-white:hover {
+  text-decoration: none;
+  color: white;
+}
