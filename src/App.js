@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Name from "./components/Name";
-import { pushRotate as Menu } from "react-burger-menu";
 
 const App = () => {
   return (
