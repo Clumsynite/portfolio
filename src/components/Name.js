@@ -9,7 +9,7 @@ const Name = () => {
         <FitText compressor={0.9}>
           <Typed
             strings={[
-              "<span style='color:#00ff80;'>Hello.</span>",
+              "<span style='color:###00c0ff;'>Hello.</span>",
               "I am Rishabh Pathak <span class='badge badge-pill badge-info'>AKA</span> Clumsyknight.",
               "I am a FullStack developer.",
               "<span style='color:#00ffbf;'>View my projects below.</span>",
