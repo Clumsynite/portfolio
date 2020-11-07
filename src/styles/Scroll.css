@@ -1,0 +1,23 @@
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00ffbf;
+  border-radius: 10px;
+}
+
+html {
+  scroll-snap-type: y proximity;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.scroll-child {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
