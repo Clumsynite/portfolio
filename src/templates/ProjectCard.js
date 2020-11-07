@@ -1,11 +1,21 @@
 const ProjectCard = (props) => {
-  const { title, desc, live, repo, img } = props.project;
+  const { title, desc, live, repo, png, gif } = props.project;
 
   return (
     <div className="ProjectCard">
       <div className="col mb-4">
         <div className="card text-white bg-dark">
-          {img && <img src="..." className="card-img-top" alt="..." />}
+          <img
+            src={png}
+            alt={title}
+            className="card-img-top"
+            onMouseEnter={(e) => {
+              e.target.src = gif;
+            }}
+            onMouseLeave={(e) => {
+              e.target.src = png;
+            }}
+          />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{desc}</p>
