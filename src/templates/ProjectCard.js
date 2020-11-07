@@ -11,10 +11,20 @@ const ProjectCard = (props) => {
             <p className="card-text">{desc}</p>
           </div>
           <div className="d-flex justify-content-around align-content-center flex-wrap pb-3">
-            <a href={repo} rel="noreferrer" target="_blank" class="btn btn-primary">
+            <a
+              href={repo}
+              rel="noreferrer"
+              target="_blank"
+              class="btn btn-primary"
+            >
               Repo
             </a>
-            <a href={live} rel="noreferrer" target="_blank" class="btn btn-primary">
+            <a
+              href={live}
+              rel="noreferrer"
+              target="_blank"
+              class="btn btn-primary"
+            >
               Live
             </a>
           </div>
