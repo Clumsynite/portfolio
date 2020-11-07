@@ -1,3 +1,7 @@
+import { InlineIcon } from "@iconify/react";
+import baselineRemoveRedEye from "@iconify/icons-ic/baseline-remove-red-eye";
+import repoIcon from '@iconify-icons/codicon/repo';
+
 const ProjectCard = (props) => {
   const { title, desc, live, repo, png, gif } = props.project;
 
@@ -25,17 +29,17 @@ const ProjectCard = (props) => {
               href={repo}
               rel="noreferrer"
               target="_blank"
-              class="btn btn-primary"
+              className="btn btn-info  w-25"
             >
-              Repo
+              <InlineIcon icon={repoIcon} /> Repo
             </a>
             <a
               href={live}
               rel="noreferrer"
               target="_blank"
-              class="btn btn-primary"
+              className="btn btn-danger w-25"
             >
-              Live
+              <InlineIcon icon={baselineRemoveRedEye} /> Live
             </a>
           </div>
         </div>
