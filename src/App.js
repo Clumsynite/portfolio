@@ -1,16 +1,15 @@
 import Navbar from "./components/Navbar";
 import Name from "./components/Name";
+import "./styles/Scroll.css";
 
 const App = () => {
   return (
-    <div
-      className="App"
-      id="outer-container"
-      style={{ backgroundColor: "black", minHeight: "100vh" }}
-    >
+    <div className="App" id="outer-container">
       <Navbar />
-      <div id="page-wrap" className="pt-4">
-        <Name />
+      <div id="page-wrap">
+        <section className="scroll-child d-flex">
+          <Name />
+        </section>
       </div>
     </div>
   );
