@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify-icons/cib": "^1.0.0",
     "@iconify/icons-carbon": "^1.0.7",
     "@iconify/icons-ic": "^1.0.16",
     "@iconify/react": "^1.1.3",
