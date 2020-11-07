@@ -1,11 +1,13 @@
-import Name from './Name'
+import Name from "./Name";
 
 const Home = () => {
-return(
-  <div className="Home">
-    <Name />
-  </div>
-)
-}
+  return (
+    <div className="Home">
+      <section className="scroll-child">
+        <Name />
+      </section>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
