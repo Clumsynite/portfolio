@@ -1,8 +1,10 @@
 import { push as Menu } from "react-burger-menu";
 import { InlineIcon } from "@iconify/react";
 import outlineHome from "@iconify/icons-ic/outline-home";
-import sharpContactPage from "@iconify/icons-ic/sharp-contact-page";
 import appSwitcher from "@iconify/icons-carbon/app-switcher";
+import roundConnectWithoutContact from "@iconify/icons-ic/round-connect-without-contact";
+import aboutMe from "@iconify-icons/cib/about-me";
+
 import "../styles/Navbar.css";
 import "../styles/Link.css";
 
@@ -21,7 +23,10 @@ const Navbar = () => {
           <InlineIcon icon={appSwitcher} /> Projects
         </a>
         <a id="contact" className="menu-item link  font-em" href="/">
-          <InlineIcon icon={sharpContactPage} /> Contact
+          <InlineIcon icon={roundConnectWithoutContact} /> Contact
+        </a>
+        <a id="about" className="menu-item link  font-em" href="/">
+          About <InlineIcon icon={aboutMe} />
         </a>
       </div>
     </Menu>
