@@ -20,6 +20,21 @@ const App = () => {
                 <Name />
               </section>
             </Route>
+            <Route exact path="/projects">
+              <section className="scroll-child">
+                <h1>Projects</h1>
+              </section>
+            </Route>
+            <Route exact path="/contact">
+              <section className="scroll-child">
+                <h1>Contact</h1>
+              </section>
+            </Route>
+            <Route exact path="/about">
+              <section className="scroll-child">
+                <h1>About</h1>
+              </section>
+            </Route>
             <Redirect to="/" />
           </Switch>
         </div>
