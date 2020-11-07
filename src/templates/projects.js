@@ -12,6 +12,7 @@ const projects = [
     live: "https://clumsynite.github.io/blog-read/",
     png: BlogReadPNG,
     gif: BlogReadGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
   },
   {
     title: "Blog-Write",
@@ -21,6 +22,16 @@ const projects = [
     live: "https://clumsynite.github.io/blog-write/",
     png: BlogWritePNG,
     gif: BlogWriteGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
+  },
+  {
+    title: "Inventory App",
+    desc: "Crud App for inventory Management",
+    repo: "https://github.com/Clumsynite/inventory-app",
+    live: "https://clumsy-inventory.herokuapp.com/item",
+    png: BlogWritePNG,
+    gif: BlogWriteGIF,
+    languages: { html: true, js: true, bootstrap: true, node: true, pug: true },
   },
 ];
 
