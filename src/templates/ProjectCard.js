@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
               href={repo}
               rel="noreferrer"
               target="_blank"
-              className="btn btn-info  w-25"
+              className="btn btn-info"
             >
               <InlineIcon icon={repoIcon} /> Repo
             </a>
@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
               href={live}
               rel="noreferrer"
               target="_blank"
-              className="btn btn-danger w-25"
+              className="btn btn-danger"
             >
               <InlineIcon icon={baselineRemoveRedEye} /> Live
             </a>
