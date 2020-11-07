@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { InlineIcon } from "@iconify/react";
 import outlineHome from "@iconify/icons-ic/outline-home";
@@ -16,18 +17,22 @@ const Navbar = () => {
       width={250}
     >
       <div className="d-flex flex-column justify-content-around h-50">
-        <a id="home" className="menu-item link font-em" href="/">
+        <NavLink to="/" id="home" className="menu-item link font-em">
           <InlineIcon icon={outlineHome} /> Home
-        </a>
-        <a id="projects" className="menu-item link  font-em" href="/">
+        </NavLink>
+        <NavLink
+          to="/projects"
+          id="projects"
+          className="menu-item link font-em"
+        >
           <InlineIcon icon={appSwitcher} /> Projects
-        </a>
-        <a id="contact" className="menu-item link  font-em" href="/">
+        </NavLink>
+        <NavLink to="/contact" id="contact" className="menu-item link font-em">
           <InlineIcon icon={roundConnectWithoutContact} /> Contact
-        </a>
-        <a id="about" className="menu-item link  font-em" href="/">
+        </NavLink>
+        <NavLink to="/about" id="about" className="menu-item link font-em">
           About <InlineIcon icon={aboutMe} />
-        </a>
+        </NavLink>
       </div>
     </Menu>
   );
