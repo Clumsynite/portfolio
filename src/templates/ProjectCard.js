@@ -1,3 +1,4 @@
+import { Markup } from "interweave";
 import { InlineIcon } from "@iconify/react";
 import baselineRemoveRedEye from "@iconify/icons-ic/baseline-remove-red-eye";
 import repoIcon from "@iconify-icons/codicon/repo";
@@ -22,7 +23,9 @@ const ProjectCard = (props) => {
         />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <p className="card-text">{desc}</p>
+          <p className="card-text">
+            <Markup content={desc} />
+          </p>
         </div>
         <div className="pb-3">
           <Languages languages={languages} />
