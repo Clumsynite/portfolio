@@ -8,6 +8,8 @@ import InventoryAppPNG from "../images/inventory-app.png";
 import InventoryAppGIF from "../images/inventory-app.gif";
 import ShoppingCartPNG from "../images/shopping-cart.png";
 import ShoppingCartGIF from "../images/shopping-cart.gif";
+import AnonDiscussionsPNG from "../images/anon-discussions.png";
+import AnonDiscussionsGIF from "../images/anon-discussions.gif";
 
 const projects = [
   {
@@ -94,6 +96,30 @@ const projects = [
     png: ShoppingCartPNG,
     gif: ShoppingCartGIF,
     languages: { html: true, js: true, bootstrap: true, react: true },
+  },
+  {
+    title: "Anon Discussion",
+    desc: `
+      <p>
+        Anon Discussions is an anonymous message board, where messages can be viewed by anyone who visits the site but, they'll not be able to see who posted the message.
+      </p>`,
+    purpose: [
+      "Building an anonymous (member-only) forum",
+      "Practicing authentication using PassportJS",
+      "Trying out MongoDB to store messages and other CRUD operations",
+    ],
+    repo: "https://github.com/Clumsynite/member-only",
+    live: "https://anon-discussions.herokuapp.com/",
+    png: AnonDiscussionsPNG,
+    gif: AnonDiscussionsGIF,
+    languages: {
+      html: true,
+      js: true,
+      bootstrap: true,
+      node: true,
+      pug: true,
+      mongo: true,
+    },
   },
 ];
 
