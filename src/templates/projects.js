@@ -14,6 +14,8 @@ import MemoryCardPNG from "../images/memory-card.png";
 import MemoryCardGIF from "../images/memory-card.gif";
 import CVProjectPNG from "../images/cv-project.png";
 import CVProjectGIF from "../images/cv-project.gif";
+import MiniMsgPNG from "../images/mini-messageboard.png";
+import MiniMsgGIF from "../images/mini-messageboard.gif";
 
 const projects = [
   {
@@ -80,7 +82,6 @@ const projects = [
     png: InventoryAppPNG,
     gif: InventoryAppGIF,
     languages: {
-      html: true,
       js: true,
       bootstrap: true,
       node: true,
@@ -117,7 +118,6 @@ const projects = [
     png: AnonDiscussionsPNG,
     gif: AnonDiscussionsGIF,
     languages: {
-      html: true,
       js: true,
       bootstrap: true,
       node: true,
@@ -156,6 +156,27 @@ const projects = [
     png: CVProjectPNG,
     gif: CVProjectGIF,
     languages: { html: true, js: true, bootstrap: true, react: true },
+  },
+  {
+    title: "Mini Message Board",
+    desc: `
+      <p>
+        Simple Express App built to practice routes and sending data across routes.
+      </p>`,
+    purpose: [
+      "Pactice Routes in express",
+      "Try to successfully render form data",
+    ],
+    repo: "https://github.com/Clumsynite/mini-message-board",
+    live: "https://mini-msg-board.herokuapp.com/",
+    png: MiniMsgPNG,
+    gif: MiniMsgGIF,
+    languages: {
+      js: true,
+      bootstrap: true,
+      node: true,
+      pug: true,
+    },
   },
 ];
 
