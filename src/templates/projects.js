@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Blog-Read",
     desc:
-      "Frontend built to read blog posts.\n Uses Blog API for authentication and database management.",
+      "<p>Frontend built to <i>read blog posts</i>.<br/>Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.</p> ",
     repo: "https://github.com/Clumsynite/blog-read",
     live: "https://clumsynite.github.io/blog-read/",
     png: BlogReadPNG,
