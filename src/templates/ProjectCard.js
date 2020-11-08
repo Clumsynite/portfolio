@@ -57,6 +57,7 @@ const ProjectCard = (props) => {
             rel="noreferrer"
             target="_blank"
             className="btn btn-info"
+            style={{ width: "40%" }}
           >
             <InlineIcon icon={repoIcon} /> Repo
           </a>
@@ -65,6 +66,7 @@ const ProjectCard = (props) => {
             rel="noreferrer"
             target="_blank"
             className="btn btn-danger"
+            style={{ width: "40%" }}
           >
             <InlineIcon icon={baselineRemoveRedEye} /> Live
           </a>
