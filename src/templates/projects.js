@@ -12,6 +12,8 @@ import AnonDiscussionsPNG from "../images/anon-discussions.png";
 import AnonDiscussionsGIF from "../images/anon-discussions.gif";
 import MemoryCardPNG from "../images/memory-card.png";
 import MemoryCardGIF from "../images/memory-card.gif";
+import CVProjectPNG from "../images/cv-project.png";
+import CVProjectGIF from "../images/cv-project.gif";
 
 const projects = [
   {
@@ -137,6 +139,22 @@ const projects = [
     live: "https://clumsynite.github.io/react-memory-card",
     png: MemoryCardPNG,
     gif: MemoryCardGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
+  },
+  {
+    title: "React CV Project",
+    desc: `
+      <p>
+        Simple CV Application which'll render your CV detail as cards.
+      </p>`,
+    purpose: [
+      "Practice maintaining state across components",
+      "Form validation and manipulation",
+    ],
+    repo: "https://github.com/Clumsynite/react-cv-project",
+    live: "https://clumsynite.github.io/react-cv-project/",
+    png: CVProjectPNG,
+    gif: CVProjectGIF,
     languages: { html: true, js: true, bootstrap: true, react: true },
   },
 ];
