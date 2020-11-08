@@ -10,6 +10,8 @@ import ShoppingCartPNG from "../images/shopping-cart.png";
 import ShoppingCartGIF from "../images/shopping-cart.gif";
 import AnonDiscussionsPNG from "../images/anon-discussions.png";
 import AnonDiscussionsGIF from "../images/anon-discussions.gif";
+import MemoryCardPNG from "../images/memory-card.png";
+import MemoryCardGIF from "../images/memory-card.gif";
 
 const projects = [
   {
@@ -120,6 +122,22 @@ const projects = [
       pug: true,
       mongo: true,
     },
+  },
+  {
+    title: "React Memory Card",
+    desc: `
+      <p>
+        This is an avengers themed mini game, where the user will have to click a card from the provided card list. When clicked, your score will increase by one and the cards will be shuffled.
+      </p>`,
+    purpose: [
+      "Practice React hooks for the first time",
+      "Practice maintaining state across components",
+    ],
+    repo: "https://github.com/Clumsynite/react-memory-card",
+    live: "https://clumsynite.github.io/react-memory-card",
+    png: MemoryCardPNG,
+    gif: MemoryCardGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
   },
 ];
 
