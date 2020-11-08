@@ -1,7 +1,16 @@
+import ProjectCard from "../templates/ProjectCard";
+import "../templates/projects";
+import projects from "../templates/projects";
+
 const Projects = () => {
   return (
-    <div className="Projects">
-      <h1>Projects</h1>{" "}
+    <div className="Projects container">
+      <h1 className="text-center mb-4 pt-3">All Projects</h1>
+      <div className="row row-cols-1 row-cols-md-3">
+        {projects.map((project, index) => {
+          return <ProjectCard project={project} long={true} key={index} />;
+        })}
+      </div>
     </div>
   );
 };
