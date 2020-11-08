@@ -6,6 +6,8 @@ import BlogAPIPNG from "../images/blog-api.png";
 import BlogAPIGIF from "../images/blog-api.gif";
 import InventoryAppPNG from "../images/inventory-app.png";
 import InventoryAppGIF from "../images/inventory-app.gif";
+import ShoppingCartPNG from "../images/shopping-cart.png";
+import ShoppingCartGIF from "../images/shopping-cart.gif";
 
 const projects = [
   {
@@ -79,6 +81,19 @@ const projects = [
       pug: true,
       mongo: true,
     },
+  },
+  {
+    title: "React Shopping Cart",
+    desc: `
+      <p>
+        A dummy store built to practice routing in react.
+      </p>`,
+    purpose: ["Practice using react-router-dom library"],
+    repo: "https://github.com/Clumsynite/react-shopping-cart",
+    live: "https://clumsynite.github.io/react-shopping-cart/",
+    png: ShoppingCartPNG,
+    gif: ShoppingCartGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
   },
 ];
 
