@@ -7,6 +7,7 @@ import fileTypeReactts from "@iconify-icons/vscode-icons/file-type-reactts";
 import nodejsIcon from "@iconify-icons/logos/nodejs-icon";
 import fileTypePug from "@iconify-icons/vscode-icons/file-type-pug";
 import fileTypeMongo from "@iconify-icons/vscode-icons/file-type-mongo";
+import vueIcon from "@iconify-icons/logos/vue";
 
 const Languages = (props) => {
   const { languages } = props;
@@ -50,6 +51,11 @@ const Languages = (props) => {
       {languages.mongo && (
         <span title="MongoDB">
           <Icon icon={fileTypeMongo} width="40" height="40" />
+        </span>
+      )}
+      {languages.vue && (
+        <span title="Vue">
+          <Icon icon={vueIcon} width="40" height="40" />
         </span>
       )}
     </div>
