@@ -10,7 +10,19 @@ import InventoryAppGIF from "../images/inventory-app.gif";
 const projects = [
   {
     title: "Blog-Read",
-    desc: `<p>Frontend built to <i>read blog posts</i>.<br/>Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.</p>`,
+    desc: `
+    <p>
+      Frontend built to <i>read blog posts</i>.
+      <br/>
+      Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.
+    </p>
+    <p><strong>Purpose</strong>: 
+      <ul>
+        <li><i>User can Read Blog posts by other people</i></li>
+        <li><i>User can comment on Blog Posts</i></li>
+        <li><i>User can view Post Author's Profile</i></li>
+      </ul>
+    </p>`,
     repo: "https://github.com/Clumsynite/blog-read",
     live: "https://clumsynite.github.io/blog-read/",
     png: BlogReadPNG,
@@ -19,8 +31,15 @@ const projects = [
   },
   {
     title: "Blog-Write",
-    desc:
-      "<p>Frontend built to <i>make new posts</i>.<br/>Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.</p> ",
+    desc: `<p>
+        Frontend built to <i>make new posts</i>.<br/>Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.
+      </p>
+      <p><strong>Purpose</strong>: 
+        <ul>
+          <li><i>User can create new blog posts</i></li>
+          <li><i>User can manage their posts and comments</i></li>
+        </ul>
+      </p>`,
     repo: "https://github.com/Clumsynite/blog-write",
     live: "https://clumsynite.github.io/blog-write/",
     png: BlogWritePNG,
@@ -50,8 +69,14 @@ const projects = [
   },
   {
     title: "Inventory App",
-    desc:
-      "<p>Crud App for inventory Management.<br/>Built in order to practice databse management by trying out basic CRUD operations on MongoDB.</p>",
+    desc: `<p>
+        Crud App for inventory Management.<br/>Built in order to practice databse management by trying out basic CRUD operations on MongoDB.
+      </p>
+      <p><strong>Purpose</strong>: 
+        <ul>
+          <li><i>Trying out CRUD operatios using node & express.</i></li>
+        </ul>
+      </p>`,
     repo: "https://github.com/Clumsynite/inventory-app",
     live: "https://clumsy-inventory.herokuapp.com/",
     png: InventoryAppPNG,
