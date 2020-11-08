@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+
+.section-title {
+  font-family: "Syncopate", sans-serif;
+  color: cyan;
+  transition: 0.5s ease-in-out;
+}
+.section-title:hover {
+  color: #00ffbf;
+}
