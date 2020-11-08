@@ -5,7 +5,16 @@ import repoIcon from "@iconify-icons/codicon/repo";
 import Languages from "./Languages";
 
 const ProjectCard = (props) => {
-  const { title, desc, live, repo, png, gif, languages } = props.project;
+  const {
+    title,
+    desc,
+    live,
+    repo,
+    png,
+    gif,
+    languages,
+    purpose,
+  } = props.project;
 
   return (
     <div className="ProjectCard col mb-4">
@@ -26,6 +35,18 @@ const ProjectCard = (props) => {
           <p className="card-text">
             <Markup content={desc} />
           </p>
+          {props.long && (
+            <p className="card-text">
+              <strong>Purpose: </strong>
+              {purpose.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <i>{item}</i>
+                  </li>
+                );
+              })}
+            </p>
+          )}
         </div>
         <div className="pb-3">
           <Languages languages={languages} />
