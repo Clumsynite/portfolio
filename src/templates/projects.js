@@ -15,14 +15,12 @@ const projects = [
       Frontend built to <i>read blog posts</i>.
       <br/>
       Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.
-    </p>
-    <p><strong>Purpose</strong>: 
-      <ul>
-        <li><i>User can Read Blog posts by other people</i></li>
-        <li><i>User can comment on Blog Posts</i></li>
-        <li><i>User can view Post Author's Profile</i></li>
-      </ul>
     </p>`,
+    purpose: [
+      "User can Read Blog posts by other people",
+      "User can comment on Blog Posts",
+      "User can view Post Author's Profile",
+    ],
     repo: "https://github.com/Clumsynite/blog-read",
     live: "https://clumsynite.github.io/blog-read/",
     png: BlogReadPNG,
@@ -33,13 +31,11 @@ const projects = [
     title: "Blog-Write",
     desc: `<p>
         Frontend built to <i>make new posts</i>.<br/>Uses <a class='link' href='https://github.com/Clumsynite/blog-api' target='_blank'>Blog API</a> for authentication and database management.
-      </p>
-      <p><strong>Purpose</strong>: 
-        <ul>
-          <li><i>User can create new blog posts</i></li>
-          <li><i>User can manage their posts and comments</i></li>
-        </ul>
       </p>`,
+    purpose: [
+      "User can create new blog posts",
+      "User can manage their posts and comments",
+    ],
     repo: "https://github.com/Clumsynite/blog-write",
     live: "https://clumsynite.github.io/blog-write/",
     png: BlogWritePNG,
@@ -48,13 +44,8 @@ const projects = [
   },
   {
     title: "Blog-API",
-    desc: `<p>RESTful API built with endpoints for authentication and database management.<br/><a class='link' target='_blank' href='https://github.com/Clumsynite/blog-read'>Blog-Read</a> and <a class='link' target='_blank' href='https://github.com/Clumsynite/blog-write'>Blog-Write</a> work as Frontend for this API.</p>
-      <p><strong>Purpose</strong>: 
-        <ul>
-          <li><i>CRUD Operations on Blog</i></li>
-          <li><i>Authentication and Session handling</i></li>
-        </ul>
-      </p>`,
+    desc: `<p>RESTful API built with endpoints for authentication and database management.<br/><a class='link' target='_blank' href='https://github.com/Clumsynite/blog-read'>Blog-Read</a> and <a class='link' target='_blank' href='https://github.com/Clumsynite/blog-write'>Blog-Write</a> work as Frontend for this API.</p>`,
+    purpose: ["CRUD Operations on Blog", "Authentication and Session handling"],
     repo: "https://github.com/Clumsynite/blog-api",
     live: "https://clumsy-blog.herokuapp.com/",
     png: BlogAPIPNG,
@@ -71,12 +62,11 @@ const projects = [
     title: "Inventory App",
     desc: `<p>
         Crud App for inventory Management.<br/>Built in order to practice databse management by trying out basic CRUD operations on MongoDB.
-      </p>
-      <p><strong>Purpose</strong>: 
-        <ul>
-          <li><i>Trying out CRUD operatios using node & express.</i></li>
-        </ul>
       </p>`,
+    purpose: [
+      "Trying out CRUD operations using MongoDB",
+      "Practe routing using Node & Express",
+    ],
     repo: "https://github.com/Clumsynite/inventory-app",
     live: "https://clumsy-inventory.herokuapp.com/",
     png: InventoryAppPNG,
