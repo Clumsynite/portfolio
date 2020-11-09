@@ -1,3 +1,6 @@
+import "../styles/Scroll.css";
+import "../styles/Elements.css";
+
 const About = () => {
   return (
     <div className="About">
