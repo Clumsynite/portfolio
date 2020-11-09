@@ -3,7 +3,7 @@ import Name from "./Name";
 import ProjectCard from "../templates/ProjectCard";
 import "../templates/projects";
 import projects from "../templates/projects";
-import "../styles/Home.css";
+import "../styles/Elements.css";
 
 const Home = () => {
   const sixProjects = projects.slice(0, 6);
