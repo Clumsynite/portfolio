@@ -1,5 +1,3 @@
-import Name from "./Name";
-
 const Contact = () => {
   return (
     <div className="Contact">
