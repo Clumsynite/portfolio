@@ -20,6 +20,8 @@ import WeatherAppPNG from "../images/weather-app.png";
 import WeatherAppGIF from "../images/weather-app.gif";
 import VueLibraryPNG from "../images/vue-library.png";
 import VueLibraryGIF from "../images/vue-library.gif";
+import JsTictactoePNG from "../images/js-tictactoe.png";
+import JsTictactoeGIF from "../images/js-tictactoe.gif";
 
 const projects = [
   {
@@ -219,6 +221,23 @@ const projects = [
       css: true,
       js: true,
       vue: true,
+    },
+  },
+  {
+    title: "JS TicTacToe",
+    desc: `
+      <p>
+        <b>Tic-Tac-Toe</b> <span class='badge badge-pill badge-light'>AKA</span> <i>X and O</i>, built using Javascript.
+      </p>`,
+    purpose: ["Practice Factory functions", "Practice Module Pattern"],
+    repo: "https://github.com/Clumsynite/js-tictactoe",
+    live: "https://clumsynite.github.io/js-tictactoe",
+    png: JsTictactoePNG,
+    gif: JsTictactoeGIF,
+    languages: {
+      html: true,
+      css: true,
+      js: true,
     },
   },
 ];
