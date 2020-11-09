@@ -18,6 +18,8 @@ import MiniMsgPNG from "../images/mini-messageboard.png";
 import MiniMsgGIF from "../images/mini-messageboard.gif";
 import WeatherAppPNG from "../images/weather-app.png";
 import WeatherAppGIF from "../images/weather-app.gif";
+import VueLibraryPNG from "../images/vue-library.png";
+import VueLibraryGIF from "../images/vue-library.gif";
 
 const projects = [
   {
@@ -180,7 +182,6 @@ const projects = [
       pug: true,
     },
   },
-
   {
     title: "Weather App",
     desc: `
@@ -195,6 +196,24 @@ const projects = [
     live: "https://clumsynite.github.io/weather-app/",
     png: WeatherAppPNG,
     gif: WeatherAppGIF,
+    languages: {
+      html: true,
+      css: true,
+      js: true,
+      vue: true,
+    },
+  },
+  {
+    title: "Vue Library",
+    desc: `
+      <p>
+        Library APP built to keep a record of the user's books
+      </p>`,
+    purpose: ["Practice Vue Framework", "Use localStorage to store records."],
+    repo: "https://github.com/Clumsynite/vue-library",
+    live: "https://clumsynite.github.io/vue-library/",
+    png: VueLibraryPNG,
+    gif: VueLibraryGIF,
     languages: {
       html: true,
       css: true,
