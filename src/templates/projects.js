@@ -22,6 +22,8 @@ import VueLibraryPNG from "../images/vue-library.png";
 import VueLibraryGIF from "../images/vue-library.gif";
 import JsTictactoePNG from "../images/js-tictactoe.png";
 import JsTictactoeGIF from "../images/js-tictactoe.gif";
+import TaskListPNG from "../images/task-list.png";
+import TaskListGIF from "../images/task-list.gif";
 
 const projects = [
   {
@@ -222,6 +224,22 @@ const projects = [
       js: true,
       vue: true,
     },
+  },
+  {
+    title: "React Task List",
+    desc: `
+      <p>
+        React app built to practice react basics
+      </p>`,
+    purpose: [
+      "Practice state manipulation",
+      "Practice event handling in React",
+    ],
+    repo: "https://github.com/Clumsynite/react-task-list",
+    live: "https://clumsynite.github.io/react-task-list/",
+    png: TaskListPNG,
+    gif: TaskListGIF,
+    languages: { html: true, js: true, bootstrap: true, react: true },
   },
   {
     title: "JS TicTacToe",
