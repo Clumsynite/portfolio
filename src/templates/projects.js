@@ -16,6 +16,8 @@ import CVProjectPNG from "../images/cv-project.png";
 import CVProjectGIF from "../images/cv-project.gif";
 import MiniMsgPNG from "../images/mini-messageboard.png";
 import MiniMsgGIF from "../images/mini-messageboard.gif";
+import WeatherAppPNG from "../images/weather-app.png";
+import WeatherAppGIF from "../images/weather-app.gif";
 
 const projects = [
   {
@@ -176,6 +178,28 @@ const projects = [
       bootstrap: true,
       node: true,
       pug: true,
+    },
+  },
+
+  {
+    title: "Weather App",
+    desc: `
+      <p>
+        Weather APp with Gif backgrounds, which change according to the weather.
+      </p>`,
+    purpose: [
+      "Use OpenWeatherMapAPI ro fetch weather details",
+      "Use Giphy API to fetch gif according to the weather",
+    ],
+    repo: "https://github.com/Clumsynite/weather-app",
+    live: "https://clumsynite.github.io/weather-app/",
+    png: WeatherAppPNG,
+    gif: WeatherAppGIF,
+    languages: {
+      html: true,
+      css: true,
+      js: true,
+      vue: true,
     },
   },
 ];
