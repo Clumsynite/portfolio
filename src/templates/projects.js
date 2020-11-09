@@ -24,6 +24,8 @@ import JsTictactoePNG from "../images/js-tictactoe.png";
 import JsTictactoeGIF from "../images/js-tictactoe.gif";
 import TaskListPNG from "../images/task-list.png";
 import TaskListGIF from "../images/task-list.gif";
+import PomodoroClockPNG from "../images/pomodoro-clock.png";
+import PomodoroClockGIF from "../images/pomodoro-clock.gif";
 
 const projects = [
   {
@@ -240,6 +242,19 @@ const projects = [
     png: TaskListPNG,
     gif: TaskListGIF,
     languages: { html: true, js: true, bootstrap: true, react: true },
+  },
+  {
+    title: "Pomodoro Clock",
+    desc: `
+      <p>
+        Pomodoro Clock, which works on the concept of <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank" class="link">Pomodoro Technique</a>.
+      </p>`,
+    purpose: ["FreeCodeCamp's Certification Project"],
+    repo: "https://github.com/Clumsynite/js-pomodoro",
+    live: "https://clumsynite.github.io/js-pomodoro/",
+    png: PomodoroClockPNG,
+    gif: PomodoroClockGIF,
+    languages: { html: true, css: true, js: true, react: true },
   },
   {
     title: "JS TicTacToe",
