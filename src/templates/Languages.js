@@ -8,6 +8,7 @@ import nodejsIcon from "@iconify-icons/logos/nodejs-icon";
 import fileTypePug from "@iconify-icons/vscode-icons/file-type-pug";
 import fileTypeMongo from "@iconify-icons/vscode-icons/file-type-mongo";
 import vueIcon from "@iconify-icons/logos/vue";
+import webpackIcon from "@iconify-icons/logos/webpack";
 
 const Languages = (props) => {
   const { languages } = props;
@@ -56,6 +57,11 @@ const Languages = (props) => {
       {languages.vue && (
         <span title="Vue">
           <Icon icon={vueIcon} width="40" height="40" />
+        </span>
+      )}
+      {languages.webpack && (
+        <span title="Webpack">
+          <Icon icon={webpackIcon} width="40" height="40" />
         </span>
       )}
     </div>
