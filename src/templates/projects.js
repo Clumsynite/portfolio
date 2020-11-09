@@ -26,6 +26,8 @@ import TaskListPNG from "../images/task-list.png";
 import TaskListGIF from "../images/task-list.gif";
 import PomodoroClockPNG from "../images/pomodoro-clock.png";
 import PomodoroClockGIF from "../images/pomodoro-clock.gif";
+import RestaurantPagePNG from "../images/restaurant-page.png";
+import RestaurantPageGIF from "../images/restaurant-page.gif";
 
 const projects = [
   {
@@ -255,6 +257,28 @@ const projects = [
     png: PomodoroClockPNG,
     gif: PomodoroClockGIF,
     languages: { html: true, css: true, js: true, react: true },
+  },
+  {
+    title: "Restaurant Page",
+    desc: `
+      <p>
+        A demo Restaurant page. An SPA which uses modules to manipulate DOM using JS. <br/><code>No Framework used</code>
+      </p>`,
+    purpose: [
+      "Practice Factory functions",
+      "Practice building apps using Webpack",
+      "Depolying apps which are built using webpack",
+    ],
+    repo: "https://github.com/Clumsynite/js-restaurant-page",
+    live: "https://clumsynite.github.io/js-restaurant-page",
+    png: RestaurantPagePNG,
+    gif: RestaurantPageGIF,
+    languages: {
+      html: true,
+      css: true,
+      js: true,
+      webpack: true,
+    },
   },
   {
     title: "JS TicTacToe",
