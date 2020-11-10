@@ -9,13 +9,24 @@ const Name = () => {
         <Typed
           strings={[
             "<span style='color:#EA0F1E;font-weight:bold'>Hello.</span>",
-            "I am Rishabh Pathak <span class='badge badge-pill badge-info'>AKA</span> Clumsyknight,",
-            "I am a FullStack developer.",
-            "<span style='color:#00ffbf;'>View my projects below.</span>",
+            "I am Rishabh Pathak <span class='badge badge-pill badge-info'>AKA</span> Clumsyknight.",
           ]}
-          typeSpeed={60}
+          typeSpeed={50}
           smartBackspace={true}
           backSpeed={50}
+          showCursor={false}
+        />
+      </FitText>
+      <FitText>
+        <Typed
+          strings={[
+            "I am a FullStack developer.",
+            "<span style='color:#00ffbf;'>View my projects <a href='#recent-projects' class='link'>below</a>.</span>",
+          ]}
+          startDelay={5500}
+          typeSpeed={50}
+          backSpeed={40}
+          showCursor={false}
         />
       </FitText>
     </div>
