@@ -12,8 +12,14 @@ const Home = () => {
       <section className="scroll-child">
         <Name />
       </section>
-      <section className="scroll-child container pt-4 mb-5">
-        <h1 className="text-center mb-4 section-title">Recent Projects</h1>
+      <section className="scroll-child container py-4 mb-5">
+        <h1
+          className="text-center mb-4 section-title"
+          id="recent-projects"
+          name="recent-projects"
+        >
+          Recent Projects
+        </h1>
         <div className="row row-cols-1 row-cols-md-3">
           {sixProjects.map((project, index) => (
             <ProjectCard project={project} key={index} />
