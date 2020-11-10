@@ -21,3 +21,7 @@ body {
   scroll-snap-align: start;
   min-height: 100vh;
 }
+
+.scroll-x {
+  overflow-x: auto;
+}
