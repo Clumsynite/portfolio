@@ -22,3 +22,14 @@
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
 }
+
+.form-card {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.form-card:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+}
