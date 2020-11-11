@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { InlineIcon } from "@iconify/react";
 import sendIcon from "@iconify-icons/carbon/send";
+import { Bars as Spinner } from "@agney/react-loading";
 import "../styles/Elements.css";
 
 const ContactForm = () => {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
+  const [sending, setsending] = useState(false);
 
   const handleEmailChange = (e) => {
     const email = e.target.value;
@@ -21,8 +23,16 @@ const ContactForm = () => {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setsending(true);
+    setTimeout(() => {
+      setsending(false);
+    }, 5000);
+  };
+
   return (
-    <form className="m-5 form-card p-4">
+    <form className="m-5 form-card p-4" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="form-group col-md-6">
           <label htmlFor="name">Name:</label>
@@ -78,8 +88,23 @@ const ContactForm = () => {
           form, it works pretty well.
         </div>
       </div>
-      <button type="submit" className="btn btn-primary btn-block btn-lg">
-        Send <InlineIcon icon={sendIcon} />
+      <button
+        type="submit"
+        className={`btn btn-block btn-lg ${
+          !sending ? "btn-primary" : "btn-light"
+        }`}
+        disabled={sending}
+      >
+        {!sending && (
+          <div>
+            Send <InlineIcon icon={sendIcon} />
+          </div>
+        )}
+        {sending && (
+          <div>
+            <Spinner width="24" />
+          </div>
+        )}
       </button>
     </form>
   );
