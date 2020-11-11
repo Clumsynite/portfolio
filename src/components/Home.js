@@ -9,7 +9,7 @@ const Home = () => {
   const sixProjects = projects.slice(0, 6);
   return (
     <div className="Home">
-      <section className="scroll-child">
+      <section className="scroll-child pt-5">
         <Name />
       </section>
       <section className="scroll-child container py-4 mb-5">
