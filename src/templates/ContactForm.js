@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { InlineIcon } from "@iconify/react";
 import sendIcon from "@iconify-icons/carbon/send";
 import { Bars as Spinner } from "@agney/react-loading";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/Elements.css";
 
 const ContactForm = () => {
@@ -26,9 +28,34 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setsending(true);
+    notify(true);
     setTimeout(() => {
       setsending(false);
     }, 5000);
+  };
+
+  const notify = (success) => {
+    if (success) {
+      toast.success("🦄 I have received your message.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    } else {
+      toast.error("🦄 Oops! Looks like an internal Error.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
 
   return (
@@ -106,6 +133,18 @@ const ContactForm = () => {
           </div>
         )}
       </button>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        transition={Flip}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </form>
   );
 };
