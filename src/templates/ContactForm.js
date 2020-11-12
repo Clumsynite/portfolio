@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { InlineIcon } from "@iconify/react";
 import sendIcon from "@iconify-icons/carbon/send";
 import { Bars as Spinner } from "@agney/react-loading";
@@ -28,30 +28,38 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setsending(true);
-    notify(true);
-    setTimeout(() => {
-      setsending(false);
-      console.log({ name, email, message });
-      initialiseForm();
-    }, 5000);
-  };
-
   const initialiseForm = () => {
     setname("");
     setemail("");
+    document.querySelector("#email-input").classList.remove("is-valid");
     setmessage("");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setsending(true);
+    try {
+      const data = await sendMail({ name, email, message });
+      setsending(false);
+      if (data.status === "success") {
+        notify(true);
+        initialiseForm();
+      } else if (data.status === "fail") {
+        notify(false);
+      }
+    } catch (error) {
+      setsending(false);
+      notify(false);
+      console.error(error);
+    }
   };
 
   const sendMail = async (form) => {
     try {
-      const response = fetch("https://clumsy-gmail.herokuapp.com/send", {
+      const response = await fetch("https://clumsy-gmail.herokuapp.com/send", {
         method: "POST",
         body: JSON.stringify(form),
         headers: {
-          Accept: "application/json",
           "Content-Type": "application/json",
         },
       });
@@ -111,7 +119,7 @@ const ContactForm = () => {
           <input
             type="email"
             className="form-control"
-            id="email"
+            id="email-input"
             placeholder="Your Email address?"
             value={email || ""}
             onChange={(e) => {
