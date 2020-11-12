@@ -1,5 +1,6 @@
 .link {
   color: cyan;
+  transition: 0.5s ease-in-out;
 }
 
 .link:hover {
@@ -18,4 +19,24 @@
 
 .font-em {
   font-size: 1.2rem;
+}
+
+.email-link {
+  color: #0069d9;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.email-link:hover {
+  text-decoration: none;
+  color: #00ffbf;
+}
+
+.discord-link {
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.discord-link:hover {
+  color: #7289da;
+  text-decoration: none;
 }
