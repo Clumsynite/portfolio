@@ -16,7 +16,10 @@ const ContactForm = () => {
     const email = e.target.value;
     const emailRegex = /\S+@\S+\.\S+/;
     setemail(email);
-    if (!emailRegex.test(email)) {
+    if (email.trim().length === 0) {
+      e.target.classList.remove("is-valid");
+      e.target.classList.remove("is-invalid");
+    } else if (!emailRegex.test(email)) {
       e.target.classList.remove("is-valid");
       e.target.classList.add("is-invalid");
     } else {
@@ -31,7 +34,32 @@ const ContactForm = () => {
     notify(true);
     setTimeout(() => {
       setsending(false);
+      console.log({ name, email, message });
+      initialiseForm();
     }, 5000);
+  };
+
+  const initialiseForm = () => {
+    setname("");
+    setemail("");
+    setmessage("");
+  };
+
+  const sendMail = async (form) => {
+    try {
+      const response = fetch("https://clumsy-gmail.herokuapp.com/send", {
+        method: "POST",
+        body: JSON.stringify(form),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return error;
+    }
   };
 
   const notify = (success) => {
