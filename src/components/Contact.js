@@ -19,26 +19,28 @@ const Contact = () => {
 
         <div id="other-contact" className="my-4">
           <h3>Other ways to Contact Me: </h3>
-          <div title="Email">
-            <a
-              href="mailto:clusmsyknight@gmail.com"
-              className="email-link mx-3 mb-2"
-            >
-              <Icon icon={emailIcon} width="40" height="40" />{" "}
-              clusmsyknight@gmail.com
-            </a>
-          </div>
-          <div title="Discord">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="discord-link ml-3"
-              title="Discord Username"
-              href="https://discord.com/channels/@me/"
-            >
-              <Icon icon={discordIcon} width="40" height="40" />{" "}
-              Clumsyknight#5550
-            </a>
+          <div className="d-flex justify-content-between flex-wrap">
+            <div title="Email">
+              <a
+                href="mailto:clusmsyknight@gmail.com&subject='Hi Rishabh'"
+                className="email-link mb-2"
+              >
+                <Icon icon={emailIcon} width="40" height="40" />{" "}
+                clusmsyknight@gmail.com
+              </a>
+            </div>
+            <div title="Discord">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="discord-link "
+                title="Discord Username"
+                href="https://discord.com/channels/@me/"
+              >
+                <Icon icon={discordIcon} width="40" height="40" />{" "}
+                Clumsyknight#5550
+              </a>
+            </div>
           </div>
         </div>
       </div>
