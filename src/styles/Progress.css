@@ -1,12 +1,12 @@
 .Progress {
-  background-color: whitesmoke;
+  background-color: gray;
   transition: 0.5s ease-in-out;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 80vw;
 }
 .Progress:hover {
-  background-color: aquamarine;
+  background-color: cadetblue;
 }
 .ProgressBar {
   transition: 0.5s ease-in-out;
