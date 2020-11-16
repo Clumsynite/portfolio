@@ -1,0 +1,19 @@
+.Progress {
+  background-color: whitesmoke;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+.Progress:hover {
+  background-color: gray;
+}
+.ProgressBar {
+  transition: 0.5s ease-in-out;
+  background-color: cyan;
+  font-weight: bold;
+  height: 25px;
+}
+.ProgressBar:hover {
+  background-color: #00ffbf;
+}
