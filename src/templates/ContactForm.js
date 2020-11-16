@@ -95,7 +95,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="mx-5 form-card p-4" onSubmit={handleSubmit}>
+    <form className="mx-3 form-card p-4" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="form-group col-md-6">
           <label htmlFor="name">Name:</label>
