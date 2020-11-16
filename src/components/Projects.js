@@ -1,6 +1,5 @@
 import ProjectCard from "../templates/ProjectCard";
-import "../templates/projects";
-import projects from "../templates/projects";
+import projects from "../data/projects";
 
 const Projects = () => {
   return (
