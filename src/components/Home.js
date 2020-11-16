@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
 import Name from "./Name";
 import ProjectCard from "../templates/ProjectCard";
-import "../templates/projects";
-import projects from "../templates/projects";
+import projects from "../data/projects";
 import "../styles/Elements.css";
 
 const Home = () => {
   const sixProjects = projects.slice(0, 6);
   return (
     <div className="Home">
-      <section className="scroll-child pt-5">
+      <section className="scroll-child pt-4">
         <Name />
       </section>
       <section className="scroll-child container py-4 mb-5">
