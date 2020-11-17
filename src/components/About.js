@@ -22,10 +22,10 @@ const About = () => {
             >
               <AccordionItemHeading>
                 <AccordionItemButton className="accordion-button">
-                  Known languages:
+                  Languages I know :
                 </AccordionItemButton>
               </AccordionItemHeading>
-              <AccordionItemPanel>
+              <AccordionItemPanel style={{ padding: 10 }}>
                 {languages.map((language, index) => {
                   return <Progress language={language} key={index} />;
                 })}
