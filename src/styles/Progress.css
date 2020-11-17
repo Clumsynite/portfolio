@@ -1,3 +1,6 @@
+:root {
+  --radius: 50px;
+}
 .Progress {
   background-color: gray;
   transition: 0.5s ease-in-out;
@@ -6,6 +9,7 @@
 }
 .Progress:hover {
   background-color: cadetblue;
+  border-radius: var(--radius);
 }
 .ProgressBar {
   transition: 0.5s ease-in-out;
@@ -15,4 +19,6 @@
 }
 .ProgressBar:hover {
   background-color: aliceblue;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
 }
