@@ -38,6 +38,7 @@
   background-color: cyan;
   padding: 20px;
   outline: none;
+  font-size: 18px;
   transition: 0.5s ease-in-out;
 }
 .accordion-button:hover {
@@ -61,4 +62,5 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   background-color: aquamarine;
+  border-bottom: 1px solid cadetblue;
 }
