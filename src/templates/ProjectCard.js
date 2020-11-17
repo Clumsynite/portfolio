@@ -2,7 +2,7 @@ import { Markup } from "interweave";
 import { InlineIcon } from "@iconify/react";
 import baselineRemoveRedEye from "@iconify/icons-ic/baseline-remove-red-eye";
 import repoIcon from "@iconify-icons/codicon/repo";
-import Languages from "./Languages";
+import Languages from "./Languages-Project";
 
 const ProjectCard = (props) => {
   const {
