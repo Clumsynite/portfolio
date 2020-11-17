@@ -8,7 +8,6 @@ import mongodbIcon from "@iconify-icons/logos/mongodb";
 import mysqlIcon from "@iconify-icons/logos/mysql";
 import javaIcon from "@iconify-icons/logos/java";
 import androidIcon from "@iconify-icons/logos/android";
-import pythonIcon from "@iconify-icons/logos/python";
 
 const LanguageIcons = (props) => {
   const { icon } = props;
@@ -57,11 +56,6 @@ const LanguageIcons = (props) => {
       {icon.android && (
         <span title="Android">
           <InlineIcon icon={androidIcon} />
-        </span>
-      )}
-      {icon.python && (
-        <span title="Python">
-          <InlineIcon icon={pythonIcon} />
         </span>
       )}
     </span>
