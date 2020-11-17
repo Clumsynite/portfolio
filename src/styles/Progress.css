@@ -12,6 +12,8 @@
   background-color: cyan;
   font-weight: bold;
   height: 25px;
+  display: flex;
+  justify-content: space-around;
 }
 .ProgressBar:hover {
   background-color: #00ffbf;
