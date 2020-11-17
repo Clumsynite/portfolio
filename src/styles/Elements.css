@@ -33,3 +33,32 @@
   border: 1px solid white;
   border-radius: 10px;
 }
+
+.accordion-button {
+  background-color: cyan;
+  padding: 20px;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+.accordion-button:hover {
+  background-color: aquamarine;
+}
+.accordion-button:before {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+.accordion-button[aria-expanded="true"]::before,
+.accordion-button[aria-selected="true"]::before {
+  transform: rotate(45deg);
+}
+.accordion-button[aria-expanded="true"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: aquamarine;
+}

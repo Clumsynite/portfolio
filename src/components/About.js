@@ -17,9 +17,13 @@ const About = () => {
       <div id="about-body" className="container">
         <div className="languages-progress col-md-6 mx-auto">
           <Accordion allowZeroExpanded>
-            <AccordionItem>
+            <AccordionItem
+              style={{ backgroundColor: "aquamarine", borderRadius: "12px" }}
+            >
               <AccordionItemHeading>
-                <AccordionItemButton>Known languages:</AccordionItemButton>
+                <AccordionItemButton className="accordion-button">
+                  Known languages:
+                </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 {languages.map((language, index) => {
