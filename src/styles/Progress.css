@@ -3,7 +3,6 @@
   transition: 0.5s ease-in-out;
   text-align: center;
   margin: 10px auto;
-  width: 80vw;
 }
 .Progress:hover {
   background-color: cadetblue;
