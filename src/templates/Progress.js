@@ -1,8 +1,9 @@
+import Icons from "../templates/Languages-About";
 import "../styles/Progress.css";
 
 const Progress = (props) => {
   const { language } = props;
-  const { name, progress } = language;
+  const { name, progress, icon } = language;
   return (
     <div className="Progress" title={`${progress}%`}>
       <div
@@ -15,7 +16,7 @@ const Progress = (props) => {
           e.target.style.width = `100%`;
         }}
       >
-        {name}
+        {name} <Icons icon={icon} />
       </div>
     </div>
   );
