@@ -8,7 +8,6 @@ const languages = [
   { name: "SQL", progress: 68, icon: { sql: true } },
   { name: "Java", progress: 65, icon: { java: true } },
   { name: "Android", progress: 62, icon: { android: true } },
-  { name: "Python", progress: 60, icon: { python: true } },
 ];
 
 export default languages;
