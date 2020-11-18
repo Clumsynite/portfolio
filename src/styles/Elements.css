@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
 
 .section-title {
   font-family: "Syncopate", sans-serif;
@@ -35,10 +37,11 @@
 }
 
 .accordion-button {
+  font-family: "Rajdhani", sans-serif;
   background-color: cyan;
   padding: 20px;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.5s ease-in-out;
   user-select: none;
 }
@@ -64,4 +67,10 @@
   border-top-right-radius: 12px;
   background-color: aquamarine;
   border-bottom: 1px solid cadetblue;
+}
+
+.content {
+  font-size: 20px;
+  color: azure;
+  font-family: "Poppins", sans-serif;
 }
