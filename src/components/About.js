@@ -5,13 +5,14 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import "react-accessible-accordion/dist/fancy-example.css";
 import Progress from "../templates/Progress";
 import languages from "../data/languages";
 import "../styles/Elements.css";
 
 const About = () => {
   return (
-    <div className="About">
+    <div className="About mb-4">
       <h1 className="text-center mt-5 mb-4 pt-3 section-title">About Me</h1>
       <div id="about-body" className="container">
         <div className="content mb-4">
