@@ -39,7 +39,12 @@ const ContactForm = () => {
     e.preventDefault();
     setsending(true);
     try {
-      const data = await sendMail({ name, email, message });
+      const data = await sendMail({
+        name,
+        email,
+        message,
+        website: "https://clumsynite.github.io/portfolio/#/contact",
+      });
       setsending(false);
       if (data.status === "success") {
         notify(true);
