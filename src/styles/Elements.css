@@ -46,7 +46,7 @@
   user-select: none;
 }
 .accordion-button:hover {
-  background-color: aquamarine;
+  background-color: #99ffdd;
 }
 .accordion-button:before {
   display: inline-block;
