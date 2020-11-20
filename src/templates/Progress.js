@@ -16,7 +16,7 @@ const Progress = (props) => {
           e.target.style.width = `100%`;
         }}
       >
-        {name} <Icons icon={icon} />
+        {name} <Icons icon={icon} style={{ pointerEvents: "none" }} />
       </div>
     </div>
   );
