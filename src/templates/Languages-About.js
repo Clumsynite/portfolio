@@ -9,11 +9,12 @@ import mysqlIcon from "@iconify-icons/logos/mysql";
 import javaIcon from "@iconify-icons/logos/java";
 import androidIcon from "@iconify-icons/logos/android";
 import pythonIcon from "@iconify-icons/logos/python";
+import githubInverted from "@iconify-icons/codicon/github-inverted";
 
 const LanguageIcons = (props) => {
-  const { icon } = props;
+  const { icon, style } = props;
   return (
-    <span style={{ pointerEvents: "none" }}>
+    <span style={style}>
       {icon.html && (
         <span title="HTML">
           <InlineIcon icon={fileTypeHtml} />
@@ -62,6 +63,11 @@ const LanguageIcons = (props) => {
       {icon.python && (
         <span title="Python">
           <InlineIcon icon={pythonIcon} />
+        </span>
+      )}
+      {icon.github && (
+        <span title="Github">
+          <InlineIcon icon={githubInverted} />
         </span>
       )}
     </span>
