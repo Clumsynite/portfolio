@@ -36,17 +36,17 @@
   border-radius: 10px;
 }
 
+.accordion-item {
+  border-radius: 12px;
+}
+
 .accordion-button {
   font-family: "Rajdhani", sans-serif;
-  background-color: cyan;
   padding: 20px;
   outline: none;
   font-size: 20px;
   transition: 0.5s ease-in-out;
   user-select: none;
-}
-.accordion-button:hover {
-  background-color: #99ffdd;
 }
 .accordion-button:before {
   display: inline-block;
@@ -65,12 +65,35 @@
 .accordion-button[aria-expanded="true"] {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  background-color: aquamarine;
   border-bottom: 1px solid cadetblue;
+  background-color: initial;
+}
+
+.lang-button {
+  background-color: cyan;
+}
+.lang-button:hover {
+  background-color: #99ffdd;
+}
+
+.skills-button {
+  background-color: #343a40;
+  color: white;
+}
+.skills-button:hover {
+  color: bisque;
 }
 
 .content {
   font-size: 20px;
   color: azure;
   font-family: "Poppins", sans-serif;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
 }
