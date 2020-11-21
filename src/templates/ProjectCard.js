@@ -49,7 +49,12 @@ const ProjectCard = (props) => {
           )}
         </div>
         <div className="pb-3">
-          <Languages languages={languages} />
+          <Languages
+            languages={languages}
+            className={
+              "d-flex justify-content-around align-content-center flex-wrap"
+            }
+          />
         </div>
         <div className="d-flex justify-content-around align-content-center flex-wrap pb-3">
           <a

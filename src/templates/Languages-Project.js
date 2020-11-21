@@ -16,9 +16,9 @@ import fileTypeVscode from "@iconify-icons/vscode-icons/file-type-vscode";
 import fileTypePhotoshop from "@iconify-icons/vscode-icons/file-type-photoshop";
 
 const Languages = (props) => {
-  const { languages } = props;
+  const { languages, className } = props;
   return (
-    <div className="Languages d-flex justify-content-around align-content-center flex-wrap">
+    <div className={`${className}`}>
       {languages.html && (
         <span title="HTML">
           <Icon icon={fileTypeHtml} width="40" height="40" />
