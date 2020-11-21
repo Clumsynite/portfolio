@@ -58,15 +58,9 @@ const About = () => {
         </div>
         <div className="col-md-6 mx-auto">
           <Accordion allowZeroExpanded>
-            <AccordionItem
-              style={{
-                backgroundColor: "aquamarine",
-                borderRadius: "12px",
-                marginTop: "4px",
-              }}
-            >
+            <AccordionItem className="accordion-item">
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-button lang-button">
+                <AccordionItemButton className="accordion-button">
                   Languages I know ?
                 </AccordionItemButton>
               </AccordionItemHeading>
@@ -76,15 +70,12 @@ const About = () => {
                 })}
               </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem
-              style={{
-                backgroundColor: "#343a40",
-                marginTop: "4px",
-              }}
-              className="accordion-item"
-            >
+            <AccordionItem className="accordion-item">
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-button skills-button">
+                <AccordionItemButton
+                  className="accordion-button"
+                  style={{ borderTop: "1px solid whitesmoke" }}
+                >
                   Frameworks and Technologies I have tried
                 </AccordionItemButton>
               </AccordionItemHeading>
