@@ -36,18 +36,31 @@
   border-radius: 10px;
 }
 
+.content {
+  font-size: 20px;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+}
+
 .accordion-item {
-  border-radius: 12px;
+  background-color: #1e3a56;
 }
 
 .accordion-button {
   font-family: "Rajdhani", sans-serif;
+  background-color: #343a40;
+  color: white;
   padding: 20px;
   outline: none;
   font-size: 20px;
   transition: 0.5s ease-in-out;
   user-select: none;
 }
+.accordion-button:hover {
+  background-color: #326190;
+  color: bisque;
+}
+
 .accordion-button:before {
   display: inline-block;
   content: "";
@@ -63,37 +76,24 @@
   transform: rotate(45deg);
 }
 .accordion-button[aria-expanded="true"] {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
   border-bottom: 1px solid cadetblue;
   background-color: initial;
-}
-
-.lang-button {
-  background-color: cyan;
-}
-.lang-button:hover {
-  background-color: #99ffdd;
-}
-
-.skills-button {
-  background-color: #343a40;
-  color: white;
-}
-.skills-button:hover {
-  color: bisque;
-}
-
-.content {
-  font-size: 20px;
-  color: azure;
-  font-family: "Poppins", sans-serif;
 }
 
 .icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 20px;
-  justify-items: center;
+  justify-items: stretch;
+  text-align: center;
+  gap: 15px;
+  padding: 15px;
+}
+.icon-grid > span {
+  transition: 0.5s ease-in-out;
+  padding: 10px;
+  border-radius: 12px;
+}
+.icon-grid > span:hover {
+  background-color: #a6c3e0;
 }
