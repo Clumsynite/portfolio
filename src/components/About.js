@@ -26,6 +26,9 @@ const About = () => {
     vscode: true,
     photoshop: true,
     mongo: true,
+    github: true,
+    npm: true,
+    ubuntu: true,
   };
   return (
     <div className="About mb-4">
