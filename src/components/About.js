@@ -62,10 +62,11 @@ const About = () => {
               style={{
                 backgroundColor: "aquamarine",
                 borderRadius: "12px",
+                marginTop: "4px",
               }}
             >
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-button">
+                <AccordionItemButton className="accordion-button lang-button">
                   Languages I know ?
                 </AccordionItemButton>
               </AccordionItemHeading>
@@ -75,10 +76,25 @@ const About = () => {
                 })}
               </AccordionItemPanel>
             </AccordionItem>
+            <AccordionItem
+              style={{
+                backgroundColor: "#343a40",
+                marginTop: "4px",
+              }}
+              className="accordion-item"
+            >
+              <AccordionItemHeading>
+                <AccordionItemButton className="accordion-button skills-button">
+                  Frameworks and Technologies I have tried
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel style={{ padding: 10 }}>
+                <div className="frameworks-and-technologies">
+                  <SkillIcons languages={skills} className="icon-grid" />
+                </div>
+              </AccordionItemPanel>
+            </AccordionItem>
           </Accordion>
-          <div className="frameworks-and-technologies">
-            {/* <SkillIcons languages={skills} /> */}
-          </div>
         </div>
       </div>
     </div>
