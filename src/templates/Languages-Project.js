@@ -14,6 +14,9 @@ import jqueryIcon from "@iconify-icons/logos/jquery";
 import firebaseIcon from "@iconify-icons/logos/firebase";
 import fileTypeVscode from "@iconify-icons/vscode-icons/file-type-vscode";
 import fileTypePhotoshop from "@iconify-icons/vscode-icons/file-type-photoshop";
+import githubInverted from "@iconify-icons/codicon/github-inverted";
+import npmIcon from "@iconify-icons/logos/npm";
+import ubuntuIcon from "@iconify-icons/logos/ubuntu";
 
 const Languages = (props) => {
   const { languages, className } = props;
@@ -34,19 +37,29 @@ const Languages = (props) => {
           <Icon icon={fileTypeJsOfficial} width="40" height="40" />
         </span>
       )}
-      {languages.bootstrap && (
-        <span title="Bootstrap">
-          <Icon icon={bootstrapIcon} width="40" height="40" />
-        </span>
-      )}
       {languages.react && (
         <span title="React">
           <Icon icon={fileTypeReactts} width="40" height="40" />
         </span>
       )}
+      {languages.vue && (
+        <span title="Vue">
+          <Icon icon={vueIcon} width="40" height="40" />
+        </span>
+      )}
       {languages.node && (
         <span title="Node">
           <Icon icon={nodejsIcon} width="40" height="40" />
+        </span>
+      )}
+      {languages.bootstrap && (
+        <span title="Bootstrap">
+          <Icon icon={bootstrapIcon} width="40" height="40" />
+        </span>
+      )}
+      {languages.jQuery && (
+        <span title="jQuery">
+          <Icon icon={jqueryIcon} width="40" height="40" />
         </span>
       )}
       {languages.pug && (
@@ -59,11 +72,6 @@ const Languages = (props) => {
           <Icon icon={fileTypeMongo} width="40" height="40" />
         </span>
       )}
-      {languages.vue && (
-        <span title="Vue">
-          <Icon icon={vueIcon} width="40" height="40" />
-        </span>
-      )}
       {languages.webpack && (
         <span title="Webpack">
           <Icon icon={webpackIcon} width="40" height="40" />
@@ -74,9 +82,14 @@ const Languages = (props) => {
           <Icon icon={gitIcon} width="40" height="40" />
         </span>
       )}
-      {languages.jQuery && (
-        <span title="jQuery">
-          <Icon icon={jqueryIcon} width="40" height="40" />
+      {languages.github && (
+        <span title="Github">
+          <Icon icon={githubInverted} color="black" width="40" height="40" />
+        </span>
+      )}
+      {languages.npm && (
+        <span title="NPM">
+          <Icon icon={npmIcon} width="40" height="40" />
         </span>
       )}
       {languages.firebase && (
@@ -92,6 +105,11 @@ const Languages = (props) => {
       {languages.photoshop && (
         <span title="Adobe Photoshop">
           <Icon icon={fileTypePhotoshop} width="40" height="40" />
+        </span>
+      )}
+      {languages.ubuntu && (
+        <span title="Linux Ubuntu">
+          <Icon icon={ubuntuIcon} width="40" height="40" />
         </span>
       )}
     </div>
