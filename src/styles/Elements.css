@@ -82,7 +82,7 @@
 
 .icon-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   justify-items: stretch;
   text-align: center;
@@ -92,7 +92,7 @@
 .icon-grid > span {
   transition: 0.5s ease-in-out;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 50px;
 }
 .icon-grid > span:hover {
   background-color: #a6c3e0;
