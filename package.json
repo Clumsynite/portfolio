@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/Clumsynite/portfolio"
   },
-  "homepage": "https://clumsynite.github.io/portfolio",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@agney/react-loading": "^0.1.2",
