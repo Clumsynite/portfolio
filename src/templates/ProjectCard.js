@@ -3,7 +3,7 @@ import { InlineIcon } from "@iconify/react";
 import baselineRemoveRedEye from "@iconify/icons-ic/baseline-remove-red-eye";
 import repoIcon from "@iconify-icons/codicon/repo";
 import Languages from "./Languages-Project";
-import '../styles/Elements.css'
+import "../styles/Elements.css";
 
 const ProjectCard = (props) => {
   const {
@@ -32,7 +32,7 @@ const ProjectCard = (props) => {
           }}
         />
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
+          <h5 className="card-title font-weight-bold">{title}</h5>
           <div className="card-text">
             <Markup content={desc} />
           </div>
