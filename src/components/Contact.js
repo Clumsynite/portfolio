@@ -22,11 +22,11 @@ const Contact = () => {
           <div className="d-flex justify-content-between flex-wrap">
             <div title="Email">
               <a
-                href="mailto:clusmsyknight@gmail.com&subject='Hi Rishabh'"
+                href="mailto:rishabhjpathak@gmail.com&subject='Hi Rishabh'"
                 className="email-link mb-2"
               >
                 <Icon icon={emailIcon} width="40" height="40" />{" "}
-                clusmsyknight@gmail.com
+                rishabhjpathak@gmail.com
               </a>
             </div>
             <div title="Discord">
