@@ -97,3 +97,9 @@
 .icon-grid > span:hover {
   background-color: #a6c3e0;
 }
+
+@media screen and (max-width: 400px) {
+  .icon-grid {
+    gap: 0px;
+  }
+}
