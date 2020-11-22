@@ -3,6 +3,7 @@ import { InlineIcon } from "@iconify/react";
 import baselineRemoveRedEye from "@iconify/icons-ic/baseline-remove-red-eye";
 import repoIcon from "@iconify-icons/codicon/repo";
 import Languages from "./Languages-Project";
+import '../styles/Elements.css'
 
 const ProjectCard = (props) => {
   const {
