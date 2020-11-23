@@ -64,7 +64,7 @@ const About = () => {
             <AccordionItem className="accordion-item">
               <AccordionItemHeading>
                 <AccordionItemButton className="accordion-button">
-                  Languages I know ?
+                  Languages I know
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel style={{ padding: 10 }}>
@@ -79,7 +79,7 @@ const About = () => {
                   className="accordion-button"
                   style={{ borderTop: "1px solid whitesmoke" }}
                 >
-                  Frameworks and Technologies I have tried
+                  Skilled in using
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel style={{ padding: 10 }}>
