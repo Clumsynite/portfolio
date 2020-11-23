@@ -49,24 +49,23 @@
 }
 
 .accordion-item {
-  background-color: #1e3a56;
+  background-color: #0a0a1d;
 }
 
 .accordion-button {
   font-family: "Rajdhani", sans-serif;
-  background-color: #343a40;
+  background-color: #121416;
   color: white;
-  padding: 20px;
+  padding: 16px;
   outline: none;
   font-size: 20px;
   transition: 0.5s ease-in-out;
   user-select: none;
 }
 .accordion-button:hover {
-  background-color: #326190;
+  background-color: #232366;
   color: bisque;
 }
-
 .accordion-button:before {
   display: inline-block;
   content: "";
@@ -85,6 +84,13 @@
   border-bottom: 1px solid cadetblue;
   color: bisque;
   background-color: initial;
+}
+
+.accordion-button:after {
+  content: " ...";
+}
+.accordion-button[aria-expanded="true"]::after {
+  content: initial;
 }
 
 .icon-grid {
