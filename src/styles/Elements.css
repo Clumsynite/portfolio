@@ -111,6 +111,18 @@
   background-color: #a6c3e0;
 }
 
+.btn-resume {
+  font-family: "Syncopate", sans-serif;
+  background-color: #0041ff;
+  border: 1px solid inherit;
+  transition: 0.5s ease-in-out;
+}
+.btn-resume:hover {
+  border: 1px solid #0041ff;
+  background-color: unset;
+  color: #0041ff;
+}
+
 @media screen and (max-width: 400px) {
   .icon-grid {
     gap: 0px;
