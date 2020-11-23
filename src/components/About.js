@@ -12,6 +12,8 @@ import SkillIcons from "../templates/Languages-Project";
 import languages from "../data/languages";
 import "../styles/Elements.css";
 import LanguageIcons from "../templates/Languages-About";
+import RESUME from "../resume/resume.jpg";
+import PDF from "../resume/resume.pdf";
 
 const About = () => {
   const skills = {
@@ -85,6 +87,40 @@ const About = () => {
               <AccordionItemPanel style={{ padding: 10 }}>
                 <div className="frameworks-and-technologies">
                   <SkillIcons languages={skills} className="icon-grid" />
+                </div>
+              </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="accordion-item">
+              <AccordionItemHeading>
+                <AccordionItemButton
+                  className="accordion-button"
+                  style={{ borderTop: "1px solid whitesmoke" }}
+                >
+                  Resume
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel style={{ padding: 10 }}>
+                <div className="resume">
+                  <a
+                    href={RESUME}
+                    target="_blank"
+                    rel="noreferrer"
+                    id="resume-jpg"
+                  >
+                    <img
+                      src={RESUME}
+                      alt="Rishabh Pathak's Resume"
+                      style={{ height: "100%", width: "100%" }}
+                    />
+                  </a>
+                  <a
+                    className="btn btn-block btn-resume link-white mt-2"
+                    href={PDF}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View as PDF
+                  </a>
                 </div>
               </AccordionItemPanel>
             </AccordionItem>
