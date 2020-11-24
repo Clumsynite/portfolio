@@ -36,14 +36,10 @@ const About = () => {
     <div className="About mb-4">
       <h1 className="text-center mt-5 mb-4 pt-3 section-title">About Me</h1>
       <div id="about-body" className="container">
-        <div className="content mb-4">
+        <div className="content mb-4 container-fluid">
           I am{" "}
-          <span
-            className="text-primary font-italic"
-            data-tip
-            data-for="rishabh"
-          >
-            Rishabh Pathak
+          <span className="text-danger font-weight-bold font-italic">
+            Rishabh Jitendra Pathak
           </span>
           , a Fullstack web developer. You can find some of my projects on{" "}
           <Link to="/projects" className="link">
@@ -58,14 +54,26 @@ const About = () => {
           >
             <LanguageIcons icon={{ github: true }} /> Profile
           </a>
-          . <span className="text-danger font-italic">Clumsyknight</span>, is a
-          pseudonym that I often use in those projects.
+          . I am a self-motivated developer with experience in{" "}
+          <span className="text-info font-italic">responsive design </span>
+          and creating{" "}
+          <span className="text-info font-italic">
+            mobile responsive websites
+          </span>{" "}
+          from Scratch.{" "}
+          <span className="text-primary font-weight-bold font-italic">
+            Clumsyknight
+          </span>
+          , is a pseudonym that I often use in those websites.
         </div>
         <div className="col-md-6 mx-auto">
           <Accordion allowZeroExpanded>
             <AccordionItem className="accordion-item">
               <AccordionItemHeading>
-                <AccordionItemButton className="accordion-button">
+                <AccordionItemButton
+                  className="accordion-button"
+                  style={{ borderTop: "none" }}
+                >
                   Languages I know
                 </AccordionItemButton>
               </AccordionItemHeading>
@@ -77,11 +85,8 @@ const About = () => {
             </AccordionItem>
             <AccordionItem className="accordion-item">
               <AccordionItemHeading>
-                <AccordionItemButton
-                  className="accordion-button"
-                  style={{ borderTop: "1px solid whitesmoke" }}
-                >
-                  Skilled in using
+                <AccordionItemButton className="accordion-button">
+                  I am Skilled in using
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel style={{ padding: 10 }}>
@@ -92,10 +97,7 @@ const About = () => {
             </AccordionItem>
             <AccordionItem className="accordion-item">
               <AccordionItemHeading>
-                <AccordionItemButton
-                  className="accordion-button"
-                  style={{ borderTop: "1px solid whitesmoke" }}
-                >
+                <AccordionItemButton className="accordion-button">
                   Resume
                 </AccordionItemButton>
               </AccordionItemHeading>
