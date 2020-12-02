@@ -17,20 +17,37 @@ const Navbar = () => {
       width={250}
     >
       <div className="d-flex flex-column justify-content-around h-50">
-        <NavLink to="/" id="home" className="menu-item link font-em">
+        <NavLink
+          exact
+          to="/"
+          id="home"
+          className="menu-item link font-em"
+          activeClassName="active-link"
+        >
           <InlineIcon icon={outlineHome} /> Home
         </NavLink>
         <NavLink
           to="/projects"
           id="projects"
           className="menu-item link font-em"
+          activeClassName="active-link"
         >
           <InlineIcon icon={appSwitcher} /> Projects
         </NavLink>
-        <NavLink to="/contact" id="contact" className="menu-item link font-em">
+        <NavLink
+          to="/contact"
+          id="contact"
+          className="menu-item link font-em"
+          activeClassName="active-link"
+        >
           <InlineIcon icon={roundConnectWithoutContact} /> Contact
         </NavLink>
-        <NavLink to="/about" id="about" className="menu-item link font-em">
+        <NavLink
+          to="/about"
+          id="about"
+          className="menu-item link font-em"
+          activeClassName="active-link"
+        >
           About <InlineIcon icon={aboutMe} />
         </NavLink>
       </div>
