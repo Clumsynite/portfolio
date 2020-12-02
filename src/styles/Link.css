@@ -17,6 +17,13 @@
   color: white;
 }
 
+.active-link {
+  color: #ff4d4d;
+}
+.active-link:hover {
+  color: #0080ff;
+}
+
 .font-em {
   font-size: 1.2rem;
 }
