@@ -34,8 +34,16 @@ const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="discord-link "
-                title="Discord Username"
+                title="Copy Username and Open Discord"
                 href="https://discord.com/channels/@me/"
+                onClick={(e) => {
+                  const el = document.createElement("textarea");
+                  el.value = e.target.textContent;
+                  document.body.appendChild(el);
+                  el.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(el);
+                }}
               >
                 <Icon icon={discordIcon} width="40" height="40" />{" "}
                 Clumsyknight#5550
