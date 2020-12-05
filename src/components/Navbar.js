@@ -6,6 +6,8 @@ import appSwitcher from "@iconify/icons-carbon/app-switcher";
 import roundConnectWithoutContact from "@iconify/icons-ic/round-connect-without-contact";
 import aboutMe from "@iconify-icons/cib/about-me";
 
+import Source from "./Source";
+
 import "../styles/Navbar.css";
 import "../styles/Link.css";
 
@@ -14,7 +16,7 @@ const Navbar = () => {
     <Menu
       pageWrapId={"page-wrap"}
       outerContainerId={"outer-container"}
-      width={250}
+      width={200}
     >
       <div className="d-flex flex-column justify-content-around h-50">
         <NavLink
@@ -51,6 +53,7 @@ const Navbar = () => {
           About <InlineIcon icon={aboutMe} />
         </NavLink>
       </div>
+      <Source />
     </Menu>
   );
 };
