@@ -124,6 +124,15 @@
   color: #0041ff;
 }
 
+.SOURCE {
+  position: absolute;
+  bottom: 10%;
+  margin-left: -15px;
+  font-size: 16px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 400px) {
   .icon-grid {
     gap: 0px;
