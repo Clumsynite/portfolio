@@ -19,6 +19,7 @@
 
 .active-link {
   color: #ff4d4d;
+  font-style: italic;
 }
 .active-link:hover {
   color: #0080ff;
