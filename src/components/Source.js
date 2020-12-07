@@ -1,5 +1,5 @@
 import { InlineIcon } from "@iconify/react";
-import heartSuit from "@iconify-icons/emojione/heart-suit";
+import heart from "@iconify-icons/ant-design/heart-filled";
 import repoIcon from "@iconify-icons/codicon/repo";
 
 const Source = () => {
@@ -16,8 +16,8 @@ const Source = () => {
           <InlineIcon icon={repoIcon} /> Repository
         </a>
       </div>
-      <div className="pt-3 border-top border-danger" >
-        Made with <InlineIcon icon={heartSuit} /> by{" "}
+      <div className="pt-3 border-top border-danger">
+        Made with <InlineIcon icon={heart} color="#BA3329" width="18" /> by{" "}
         <a
           href="https://github.com/Clumsynite"
           title="Github Profile"
