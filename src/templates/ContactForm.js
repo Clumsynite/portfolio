@@ -61,13 +61,16 @@ const ContactForm = () => {
 
   const sendMail = async (form) => {
     try {
-      const response = await fetch("https://clumsy-gmail.herokuapp.com/send", {
-        method: "POST",
-        body: JSON.stringify(form),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://clumsy-gmail.herokuapp.com/send/v1",
+        {
+          method: "POST",
+          body: JSON.stringify(form),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const data = await response.json();
       return data;
     } catch (error) {
